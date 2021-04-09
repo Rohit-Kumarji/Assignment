@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { EmpDataComponent } from './emp-data/emp-data.component';
+import { EmpListComponent } from './emp-list/emp-list.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       NavBarComponent,
-      EmpDataComponent
+      EmpDataComponent,
+      EmpListComponent
    ],
   imports: [
     BrowserModule

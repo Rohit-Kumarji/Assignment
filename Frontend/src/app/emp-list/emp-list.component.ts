@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpListComponent implements OnInit {
 
-  Property: Array<any> = [{
+ /* Properties: Array<any> = [{
     "id": 1,
     "name": "test1",
     "age": "11",
@@ -30,9 +30,14 @@ export class EmpListComponent implements OnInit {
     "gender": "male",
     "email": "test3@gmail.com",
     "phoneNo": "9393939393"
-  }]
+  }]*/
 
-  constructor() { }
+Properties: Array<any> = [];
+
+  constructor() {
+this.Properties=JSON.parse(localStorage.getItem('emp'));
+
+  }
 
   ngOnInit() {
   }

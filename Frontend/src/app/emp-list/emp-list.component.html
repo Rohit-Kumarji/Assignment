@@ -1,3 +1,20 @@
-<p>
-  emp-list works!
-</p>
+<app-nav-bar></app-nav-bar>
+<table class="table">
+  <thead>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Email</th>
+      <th>Phone No</th>
+  </thead>
+    <tr *ngFor="let Property of Properties">
+<td >{{Property.id}}</td>
+<td >{{Property.name}}</td>
+<td >{{Property.age}}</td>
+<td >{{Property.gender}}</td>
+<td >{{Property.email}}</td>
+<td >{{Property.phoneNo}}</td>
+   </tr>
+</table>
+
